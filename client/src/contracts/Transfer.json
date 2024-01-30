@@ -1,0 +1,454 @@
+{
+  "contractName": "Transfer",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "internalType": "address payable",
+          "name": "to",
+          "type": "address"
+        }
+      ],
+      "name": "transfer",
+      "outputs": [],
+      "payable": true,
+      "stateMutability": "payable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":false,\"inputs\":[{\"internalType\":\"address payable\",\"name\":\"to\",\"type\":\"address\"}],\"name\":\"transfer\",\"outputs\":[],\"payable\":true,\"stateMutability\":\"payable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"project:/contracts/Transfer.sol\":\"Transfer\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/Transfer.sol\":{\"keccak256\":\"0x8bf6f3dc8c581a8d34abe119c338fa7857985a607157b2315506fba49905e577\",\"urls\":[\"bzz-raw://9332143df6e641bc6a2151f2a23f489bb301ee17e37d5a66a01042b58055f12f\",\"dweb:/ipfs/QmY5Y41SrvBM97GvJgtyBfi673iRWV9u2LZNXyXHY1xgrQ\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b5060e08061001f6000396000f3fe608060405260043610601c5760003560e01c80631a695230146021575b600080fd5b606060048036036020811015603557600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506062565b005b8073ffffffffffffffffffffffffffffffffffffffff166108fc349081150290604051600060405180830381858888f1935050505015801560a7573d6000803e3d6000fd5b505056fea265627a7a72315820740443c0eca0d399d2fbd17c7018bd58ee629670bed5442c056f134d03f955e664736f6c63430005100032",
+  "deployedBytecode": "0x608060405260043610601c5760003560e01c80631a695230146021575b600080fd5b606060048036036020811015603557600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506062565b005b8073ffffffffffffffffffffffffffffffffffffffff166108fc349081150290604051600060405180830381858888f1935050505015801560a7573d6000803e3d6000fd5b505056fea265627a7a72315820740443c0eca0d399d2fbd17c7018bd58ee629670bed5442c056f134d03f955e664736f6c63430005100032",
+  "sourceMap": "26:110:2:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;26:110:2;;;;;;;",
+  "deployedSourceMap": "26:110:2:-;;;;;;;;;;;;;;;;;;;;;47:87;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;47:87:2;;;;;;;;;;;;;;;;;;;:::i;:::-;;;108:2;:11;;:22;120:9;108:22;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;108:22:2;47:87;:::o",
+  "source": "pragma solidity ^0.5.16;\n\ncontract Transfer\n{\n\tfunction transfer(address payable to)\n\texternal payable\n\t{\n\t\tto.transfer(msg.value);\n\t}\n}",
+  "sourcePath": "C:\\Users\\Admin\\OneDrive\\Desktop\\LiftDu\\contracts\\Transfer.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/Transfer.sol",
+    "exportedSymbols": {
+      "Transfer": [
+        466
+      ]
+    },
+    "id": 467,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 452,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".16"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:2"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 466,
+        "linearizedBaseContracts": [
+          466
+        ],
+        "name": "Transfer",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 464,
+              "nodeType": "Block",
+              "src": "104:30:2",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 460,
+                          "name": "msg",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 481,
+                          "src": "120:3:2",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_magic_message",
+                            "typeString": "msg"
+                          }
+                        },
+                        "id": 461,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "value",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": null,
+                        "src": "120:9:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 457,
+                        "name": "to",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 454,
+                        "src": "108:2:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address_payable",
+                          "typeString": "address payable"
+                        }
+                      },
+                      "id": 459,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "transfer",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": null,
+                      "src": "108:11:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_transfer_nonpayable$_t_uint256_$returns$__$",
+                        "typeString": "function (uint256)"
+                      }
+                    },
+                    "id": 462,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "108:22:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 463,
+                  "nodeType": "ExpressionStatement",
+                  "src": "108:22:2"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 465,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "transfer",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 455,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 454,
+                  "name": "to",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 465,
+                  "src": "65:18:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address_payable",
+                    "typeString": "address payable"
+                  },
+                  "typeName": {
+                    "id": 453,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "65:15:2",
+                    "stateMutability": "payable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address_payable",
+                      "typeString": "address payable"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "64:20:2"
+            },
+            "returnParameters": {
+              "id": 456,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "104:0:2"
+            },
+            "scope": 466,
+            "src": "47:87:2",
+            "stateMutability": "payable",
+            "superFunction": null,
+            "visibility": "external"
+          }
+        ],
+        "scope": 467,
+        "src": "26:110:2"
+      }
+    ],
+    "src": "0:136:2"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "project:/contracts/Transfer.sol",
+      "exportedSymbols": {
+        "Transfer": [
+          466
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "^",
+            "0.5",
+            ".16"
+          ]
+        },
+        "id": 452,
+        "name": "PragmaDirective",
+        "src": "0:24:2"
+      },
+      {
+        "attributes": {
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "contract",
+          "documentation": null,
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            466
+          ],
+          "name": "Transfer",
+          "scope": 467
+        },
+        "children": [
+          {
+            "attributes": {
+              "documentation": null,
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "transfer",
+              "scope": 466,
+              "stateMutability": "payable",
+              "superFunction": null,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "to",
+                      "scope": 465,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address payable",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "payable",
+                          "type": "address payable"
+                        },
+                        "id": 453,
+                        "name": "ElementaryTypeName",
+                        "src": "65:15:2"
+                      }
+                    ],
+                    "id": 454,
+                    "name": "VariableDeclaration",
+                    "src": "65:18:2"
+                  }
+                ],
+                "id": 455,
+                "name": "ParameterList",
+                "src": "64:20:2"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 456,
+                "name": "ParameterList",
+                "src": "104:0:2"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "isStructConstructorCall": false,
+                          "lValueRequested": false,
+                          "names": [
+                            null
+                          ],
+                          "type": "tuple()",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_uint256",
+                                  "typeString": "uint256"
+                                }
+                              ],
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "member_name": "transfer",
+                              "referencedDeclaration": null,
+                              "type": "function (uint256)"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 454,
+                                  "type": "address payable",
+                                  "value": "to"
+                                },
+                                "id": 457,
+                                "name": "Identifier",
+                                "src": "108:2:2"
+                              }
+                            ],
+                            "id": 459,
+                            "name": "MemberAccess",
+                            "src": "108:11:2"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "member_name": "value",
+                              "referencedDeclaration": null,
+                              "type": "uint256"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 481,
+                                  "type": "msg",
+                                  "value": "msg"
+                                },
+                                "id": 460,
+                                "name": "Identifier",
+                                "src": "120:3:2"
+                              }
+                            ],
+                            "id": 461,
+                            "name": "MemberAccess",
+                            "src": "120:9:2"
+                          }
+                        ],
+                        "id": 462,
+                        "name": "FunctionCall",
+                        "src": "108:22:2"
+                      }
+                    ],
+                    "id": 463,
+                    "name": "ExpressionStatement",
+                    "src": "108:22:2"
+                  }
+                ],
+                "id": 464,
+                "name": "Block",
+                "src": "104:30:2"
+              }
+            ],
+            "id": 465,
+            "name": "FunctionDefinition",
+            "src": "47:87:2"
+          }
+        ],
+        "id": 466,
+        "name": "ContractDefinition",
+        "src": "26:110:2"
+      }
+    ],
+    "id": 467,
+    "name": "SourceUnit",
+    "src": "0:136:2"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.16+commit.9c3226ce.Emscripten.clang"
+  },
+  "networks": {
+    "5777": {
+      "events": {},
+      "links": {},
+      "address": "0xC92eb8747c1089e6c867573798a0EABbC7A4CefC",
+      "transactionHash": "0x23f9db8b3717a53a6594a5232f0ac5eff47348c0c217cf402484f99af14eb92e"
+    }
+  },
+  "schemaVersion": "3.4.14",
+  "updatedAt": "2023-09-22T16:36:37.460Z",
+  "networkType": "ethereum",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}
